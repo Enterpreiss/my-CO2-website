@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" dir="ltr">
     <!-- head mit Metainformationen wie title und der Link zum Bootstrap Framwork für Styling -->
 <head>
     <meta charset="UTF-8">
@@ -9,24 +9,49 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/v/bs5/dt-2.3.1/datatables.min.css" />
 </head>
 <body>
-    <!-- header mit Logo, Navbar und Menü (angepasst an Sprache der Besucher)-->
-    <header>
-        <div class="logo-container">
-            <img src="img/ngo-logo.png" alt="NGO Logo" height="100">
-        </div>
-        <h1>CO<sub>2</sub>-Footprint NGO</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>  
-                <li><a href="#spende">Spenden & Helfen</a></li>    
-                <li><a href="#tipps">Selbst aktiv werden</a></li>    
-                <li><a href="#aboutus">Über Uns</a></li>     
+    <!-- header mit Logo, Navbar und Menü -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <img src="img/ngo-logo.png" alt="Logo" height="30" class="d-inline-block align-text-top me-2">
+            CO<sub>2</sub> Footprint NGO
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#table">Emissionen weltweit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tips">Tipps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus">Über uns</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+       </div>
+      </nav>
+  </header>
     <!-- main container mit Hauptinhalten: Tabelle CO2  -->
     <main id="content">
+      <section id="home" class="my-5">
+  <h2>Willkommen bei CO₂-Footprint NGO</h2>
+  <p>
+    Unsere Mission ist es, Transparenz zu schaffen: Welche Länder und Unternehmen tragen wie viel zur globalen CO₂-Belastung bei? <br>
+    Mit dieser Plattform möchten wir Daten sichtbar machen – verständlich, zugänglich und auf einen Blick.  
+    Gemeinsam können wir bewusster handeln und Emissionen reduzieren.
+  </p>
+    </section>
+    <section id="table">
         <table id="co2-table" class="table table-striped table-bordered">
+          <h3>Emissionen von Unternehmen weltweit</h3>
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -86,6 +111,52 @@
 </tr>
   </tbody>
 </table>
+    </section>
+    <section id="tips" class="my-5">
+  <h3>Was Sie selbst tun können</h3>
+  <ul>
+    <li><strong>Mobilität:</strong> Nutzen Sie Fahrrad, Bus oder Bahn statt Auto, wo möglich.</li>
+    <li><strong>Ernährung:</strong> Weniger Fleisch = weniger Emissionen. Pflanzlich ist klimafreundlicher.</li>
+    <li><strong>Stromverbrauch:</strong> Wechseln Sie zu Ökostrom und schalten Sie Geräte konsequent aus.</li>
+    <li><strong>Konsum:</strong> Reparieren statt neu kaufen – und bewusster einkaufen. Achten Sie z.B. auf bestimmte Klimalabel beim Einkauf Ihrer Produkte.</li>
+  </ul>
+  <p>
+    Jeder kleine Schritt zählt. Werden Sie Teil der Lösung!
+  </p>
+  <!--  
+  <p>
+    Haben Sie noch mehr Ideen, die anderen helfen könnten emissionsärmer zu leben? Hinterlassen Sie uns gerne einen Kommentar!
+  </p>-->
+</section>
+
+<!-- Kommentarfeld um Eingabefeldschutz von xss zu testen ?
+<section class="my-5">
+  <h4>Tipps für die Community</h4>
+ <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Ihr Name">
+    </div>
+    <div class="mb-3">
+      <label for="comment" class="form-label">Kommentar</label>
+      <input type="text" class="form-control" id="comment" placeholder="Ihr Kommentar">
+    </div>
+    <button type="submit" class="btn btn-primary">Absenden</button>
+  </form>
+</section>-->
+
+<section id="aboutus" class="my-5">
+  <h3>Über uns</h3>
+  <p>
+    CO₂-Footprint NGO ist ein interdisziplinäres Projekt, das im Rahmen einer Studienarbeit entstand.  
+    Unser Ziel ist es, Daten über Emissionen verständlich aufzubereiten und ein Bewusstsein für globale Verantwortung zu schaffen.
+  </p>
+  <p>
+    Die dargestellten CO₂-Daten sind fiktiv und dienen ausschließlich zu Demonstrationszwecken.  
+    Für wissenschaftlich fundierte Quellen verweisen wir auf Organisationen wie das Umweltbundesamt, die IEA und die UN.
+  </p>
+</section>
+
     </main>
     <!-- footer mit rechtlichen Hinweisen -->
     <footer>
