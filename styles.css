@@ -9,3 +9,91 @@ html[dir="ltr"] .navbar .container-fluid {
 html[dir="rtl"] .navbar .container-fluid {
   justify-content: flex-end !important;
 }
+
+/* Grundfarben: leichtes Grün & Hellgrau für Umwelt-Thema */
+:root {
+  --main-bg: #f4f9f4;
+  --card-bg: #ffffff;
+  --accent-color: #4CAF50;
+  --header-bg: #e8f5e9;
+  --footer-bg: #e0e0e0;
+  --text-color: #333;
+  --link-color: #388e3c;
+}
+
+/* Allgemeine Schrift und Hintergrundfarbe */
+body {
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  background-color: var(--header-bg) !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Links optisch hervorheben */
+.nav-link.active {
+  color: var(--accent-color) !important;
+  font-weight: bold;
+}
+
+/* Überschriften */
+h2, h3, h4 {
+  color: var(--accent-color);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Tabelle Hintergrund + Ecken */
+table.table {
+  background-color: var(--card-bg);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Tabellenkopf farbig + Text dunkel */
+table.table thead th {
+  background-color: var(--accent-color) !important;
+  color: #fff !important;
+}
+
+/* Section mit Rahmen */
+section {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg) !important;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+  background-color: #388e3c;
+  border-color: #2e7d32;
+}
+
+/* Formular-Eingabefeld */
+input.form-control {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Vorschlagsfeld hervorheben */
+#output {
+  border-left: 4px solid var(--accent-color);
+}
