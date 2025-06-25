@@ -1,3 +1,11 @@
-#content {
-    padding-top: 20px;
+html {
+  scroll-padding-top: 70px; /* Höhe der Navbar */
+}
+
+html[dir="ltr"] .navbar .container-fluid {
+  justify-content: flex-start !important;
+}
+
+html[dir="rtl"] .navbar .container-fluid {
+  justify-content: flex-end !important;
 }
