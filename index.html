@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
+<!-- 
+Manuelles Umschalten auf arabic 
+ <html lang="ar" dir="rtl">
+-->
 <!-- head mit Metainformationen wie title und der Link zum Bootstrap Framwork für Styling -->
 
 <head>
@@ -12,7 +16,7 @@
   <!-- Einbindung datatables -->
   <link rel="stylesheet" href="https://cdn.datatables.net/v/bs5/dt-2.3.1/datatables.min.css" />
   <!-- Einbindung des lokalen CSS Stylesheets -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/resources/styles.css">
 </head>
 
 <body>
@@ -22,9 +26,14 @@
       <div class="container-fluid d-flex">
         <a class="navbar-brand">
           <!-- Logo und Titel der Seite -->
-          <img src="img/ngo-logo.png" alt="Logo" height="30" class="d-inline-block align-text-top me-2">
+          <img src="/resources/img/ngo-logo.png" alt="Logo" height="30" class="d-inline-block align-text-top me-2">
           CO<sub>2</sub> Footprint NGO
         </a>
+        <!-- 
+        <a class="navbar-brand"> 
+       <img src="/resources/img/ngo-logo.png" alt="Logo" height="30" class="d-inline-block align-text-top me-2"> 
+       منظمة البصمة غير الحكومية 
+      </a> -->
         <!-- Responsives Burgermenü das beim Zoomen bzw. auf kleineren Bildschirmen automatisch einklappt und die nav-items enthält -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,15 +44,19 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <!-- <a class="nav-link active" aria-current="page" href="#home">المنزل</a> -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#table">Emissionen weltweit</a>
+              <!-- <a class="nav-link active" aria-current="page" href="#home">الانبعاثات حول العالم</a> -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#tips">Tipps</a>
+              <!-- <a class="nav-link active" aria-current="page" href="#home">الإرشادات</a> -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#aboutus">Über uns</a>
+              <!-- <a class="nav-link active" aria-current="page" href="#home">نبذة عنا</a> -->
             </li>
           </ul>
         </div>
@@ -66,67 +79,103 @@
     <section id="table">
       <div class="table-responsive">
         <h3>Emissionen von Unternehmen weltweit</h3>
-      <table id="co2-table" class="table table-striped table-bordered">
-        
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name des Unternehmens</th>
-            <th scope="col">Land</th>
-            <th scope="col">Emissionen in Mt CO<sub>2</sub></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Umweltverschmutzer AG</td>
-            <td>Deutschland</td>
-            <td>200.47</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Klimakrise GmbH</td>
-            <td>Deutschland</td>
-            <td>255.89</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Sawatoshi Coal Inc.</td>
-            <td>China</td>
-            <td>720.25</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>GlobalCarbon Inc.</td>
-            <td>Indien</td>
-            <td>389.12</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Pollutex S.A.</td>
-            <td>Brasilien</td>
-            <td>312.75</td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>FutureBurn Ltd.</td>
-            <td>USA</td>
-            <td>578.23</td>
-          </tr>
-          <tr>
-            <th scope="row">7</th>
-            <td>SkySmog Corp.</td>
-            <td>China</td>
-            <td>498.61</td>
-          </tr>
-          <tr>
-            <th scope="row">8</th>
-            <td>EcoNeglect PLC</td>
-            <td>Russland</td>
-            <td>287.90</td>
-          </tr>
-        </tbody>
-      </table>
+        <table id="co2-table" class="table table-striped table-bordered">
+
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name des Unternehmens</th>
+              <th scope="col">Land</th>
+              <th scope="col">Emissionen in Mt CO<sub>2</sub></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Umweltverschmutzer AG</td>
+              <td>Deutschland</td>
+              <td>200.47</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Klimakrise GmbH</td>
+              <td>Deutschland</td>
+              <td>255.89</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Sawatoshi Coal Inc.</td>
+              <td>China</td>
+              <td>720.25</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>GlobalCarbon Inc.</td>
+              <td>Indien</td>
+              <td>389.12</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Pollutex S.A.</td>
+              <td>Brasilien</td>
+              <td>312.75</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>FutureBurn Ltd.</td>
+              <td>USA</td>
+              <td>578.23</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>SkySmog Corp.</td>
+              <td>China</td>
+              <td>498.61</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>EcoNeglect PLC</td>
+              <td>Russland</td>
+              <td>287.90</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Oil & Burn Ltd.</td>
+              <td>USA</td>
+              <td>685.13</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Carbon Peak Corp.</td>
+              <td>Indien</td>
+              <td>598.76</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>Fossilia SA</td>
+              <td>Brasilien</td>
+              <td>442.38</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>Arktik Melt Industries</td>
+              <td>Russland</td>
+              <td>489.20</td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>Emissio Corp.</td>
+              <td>Australien</td>
+              <td>370.44</td>
+            </tr>
+            <tr>
+              <th scope="row">14</th>
+              <td>SmogTech Holdings</td>
+              <td>Südafrika</td>
+              <td>328.97</td>
+            </tr>
+          </tbody>
+        </table>
     </section>
     </div>
     <!--Tipps Bereich-->
